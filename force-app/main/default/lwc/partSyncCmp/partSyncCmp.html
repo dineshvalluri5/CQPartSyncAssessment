@@ -1,0 +1,9 @@
+<template>
+    <lightning-card variant="narrow" icon-name="custom:custom108">
+        <h1 slot="title">Part Sync using External API</h1>
+        <lightning-button class="slds-p-left_x-small" variant="brand" label="Start Sync Process" title="Sync Process" onclick={handleSyncProcess}></lightning-button>
+        <template lwc:if={showSpinner}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>
